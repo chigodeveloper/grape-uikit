@@ -1422,7 +1422,7 @@ var sortDataInOrder = function (data, columns) {
 };
 var makeRender = function (
 // eslint-disable-next-line
-value, 
+value,
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 render, row) {
     return render ? function () { return render({ row: row, value: value }); } : function () { return value; };
@@ -1875,7 +1875,7 @@ var Icon$P = function (props) {
 var Logo = function (_a) {
     var isDark = _a.isDark, props = __rest(_a, ["isDark"]);
     return (React.createElement(Svg, __assign({ viewBox: "0 0 205 26" }, props),
-        React.createElement("image", { width: "205", height: "26", href: isDark ? '/images/egg/LogoTextNewDark.png' : '/images/egg/LogoTextNewWhite.png' })));
+        React.createElement("image", { width: "205", height: "26", href: isDark ? '/images/egg/2LogoTextNewDark.png' : '/images/egg/2LogoTextNewWhite.png' })));
 };
 
 var Icon$Q = function (props) {
@@ -2209,74 +2209,31 @@ var links = [
     },
 ];
 var socials = [
-    {
-        label: "Telegram",
-        icon: "TelegramIcon",
-        items: [
-            {
-                label: "English",
-                href: "https://t.me/goosedefi",
-            },
-            // {
-            //   label: "Bahasa Indonesia",
-            //   href: "https://t.me/PancakeSwapIndonesia",
-            // },
-            {
-                label: "中文",
-                href: "https://t.me/goosefinancechinese",
-            },
-            // {
-            //   label: "Tiếng Việt",
-            //   href: "https://t.me/PancakeSwapVN",
-            // },
-            {
-                label: "Italiano",
-                href: "https://t.me/goosefinanceitalian",
-            },
-            {
-                label: "русский",
-                href: "https://t.me/goosefinancerussian",
-            },
-            {
-                label: "Türkiye",
-                href: "https://t.me/GooseFinanceTurkey",
-            },
-            // {
-            //   label: "Português",
-            //   href: "https://t.me/PancakeSwapPortuguese",
-            // },
-            {
-                label: "Español",
-                href: "https://t.me/goosefinancespanish",
-            },
-            {
-                label: "日本語",
-                href: "https://t.me/goosefinancejapanese",
-            },
-            {
-                label: "Français",
-                href: "https://t.me/goosefinancefrench",
-            },
-            {
-                label: "Announcements",
-                href: "https://t.me/goosefinanceann",
-            },
-            {
-                label: "Price Bot",
-                href: "https://t.me/BinanceRocketEGG",
-            },
-        ],
-    },
-    {
-        label: "Twitter",
-        icon: "TwitterIcon",
-        href: "https://twitter.com/goosedefi",
-    },
-    {
-        label: "Reddit",
-        icon: "RedditIcon",
-        href: "https://www.reddit.com/r/GooseFinanceofficial",
-    },
+  {
+    label: "Telegram",
+    icon: "TelegramIcon",
+    items: [
+      {
+        label: "English",
+        href: "#",
+      },
+      {
+        label: "Announcements",
+        href: "#",
+      },
+
+    ],
+  },
+  {
+    label: "Twitter",
+    icon: "TwitterIcon",
+    href: "#",
+  },
+  {
+    label: "Reddit",
+    icon: "RedditIcon",
+    href: "#",
+  },
 ];
 var MENU_HEIGHT = 64;
 var MENU_ENTRY_HEIGHT = 48;
@@ -2420,7 +2377,7 @@ var PanelFooter = function (_a) {
                     React.createElement(Text, { color: "textDisabled", mx: "4px" }, "/"),
                     React.createElement(MoonIcon, { color: isDark ? "text" : "textDisabled", width: "24px" }))),
             React.createElement(Dropdown, { position: "top-right", target: React.createElement(Button, { variant: "text", startIcon: React.createElement(LanguageIcon, { color: "textSubtle", width: "24px" }) },
-                    React.createElement(Text, { color: "textSubtle" }, currentLang === null || currentLang === void 0 ? void 0 : currentLang.toUpperCase())) }, langs.map(function (lang) { return (React.createElement(MenuButton, { key: lang.code, fullWidth: true, onClick: function () { return setLang(lang); }, 
+                    React.createElement(Text, { color: "textSubtle" }, currentLang === null || currentLang === void 0 ? void 0 : currentLang.toUpperCase())) }, langs.map(function (lang) { return (React.createElement(MenuButton, { key: lang.code, fullWidth: true, onClick: function () { return setLang(lang); },
                 // Safari fix
                 style: { minHeight: "32px", height: "auto" } }, lang.language)); })))));
 };
